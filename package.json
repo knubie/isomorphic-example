@@ -1,0 +1,21 @@
+{
+  "name": "isomorphic-js-example",
+  "version": "1.0.0",
+  "description": "An example of isomorphic javascript with react and monorouter.",
+  "main": "server.js",
+  "author": "Matthew Steedman <matthew.steedman@codeandtheory.com>",
+  "license": "MIT",
+    "scripts": {
+    "build": "jsx views/jsx views && webpack client.js bundle.js",
+    "serve": "node server.js",
+    "start": "npm run build && npm run serve"
+  },
+  "dependencies": {
+    "monorouter": "*",
+    "react": "*",
+    "monorouter-react": "*",
+    "connect-monorouter": "*",
+    "express": "*",
+    "webpack": "*"
+  }
+}
