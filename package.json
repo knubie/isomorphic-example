@@ -16,6 +16,7 @@
     "monorouter-react": "*",
     "connect-monorouter": "*",
     "express": "*",
-    "browserify": "*"
+    "browserify": "*",
+    "react-tools": "*"
   }
 }
