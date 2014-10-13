@@ -5,8 +5,8 @@
   "main": "server.js",
   "author": "Matthew Steedman <matthew.steedman@codeandtheory.com>",
   "license": "MIT",
-    "scripts": {
-    "build": "jsx views/jsx views && webpack client.js bundle.js",
+  "scripts": {
+    "build": "jsx views/jsx views && browserify client.js > bundle.js",
     "serve": "node server.js",
     "start": "npm run build && npm run serve"
   },
@@ -16,6 +16,6 @@
     "monorouter-react": "*",
     "connect-monorouter": "*",
     "express": "*",
-    "webpack": "*"
+    "browserify": "*"
   }
 }

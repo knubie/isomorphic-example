@@ -8,7 +8,14 @@ port = process.env.PORT || 5000;
 express()
   .use(routerMiddleware(Router))
   .get('/bundle.js', function(req, res) {
-    res.sendfile(path.join(__dirname, 'bundle.js'));
+    res.sendFile(path.join(__dirname, 'bundle.js'));
+  })
+  .get('/pets', function(req, res) {
+    res.json([
+      {name: 'Winston'},
+      {name: 'Chaplin'},
+      {name: 'Bennie'}
+    ]);
   })
   .listen(port, function() {
     console.log("Listening on " + port + ".");
